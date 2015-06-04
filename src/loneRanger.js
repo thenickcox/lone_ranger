@@ -98,7 +98,7 @@
           fillLower = defaults.fillLower,
           fillUpper = defaults.fillUpper,
           gradientStr = "(left, " + fillLower +
-                        " 1%, #49915d " +
+                        " 1%, " + fillLower + " " +
                         percent + "%, " +
                         fillUpper + " " +
                         percent + "%, " +
