@@ -55,7 +55,7 @@ describe 'LoneRanger', ->
   describe 'populating range guides', ->
     beforeEach ->
       $('.ranger-container').remove()
-      @range = $('<input type="range" class="lone-ranger" min="20" max="120" step="10" />')
+      @range = $('<input type="range" class="lone-ranger" min="0" max="100" step="10" />')
       @range.appendTo @page
       $('input').loneRanger
         populateRangeGuides: true

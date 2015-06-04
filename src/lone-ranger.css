@@ -17,12 +17,12 @@
 
 .lone-ranger::-webkit-slider-thumb {
   -webkit-appearance: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   height: 30px;
   width: 16px;
   position: relative;
   bottom: 14px;
-  background: white;
+  background: #fff;
   cursor: pointer;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -30,12 +30,12 @@
   -o-border-radius: 0;
   border-radius: 0; }
 .lone-ranger::-moz-range-thumb {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   height: 30px;
   width: 16px;
   position: relative;
   bottom: 14px;
-  background: white;
+  background: #fff;
   cursor: pointer;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -46,31 +46,39 @@
 .lone-ranger::-webkit-slider-runnable-track {
   width: 100%;
   height: 7px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   background: transparent; }
 .lone-ranger::-moz-range-track {
   width: 100%;
   height: 7px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   background: transparent; }
 
 .rangerVal {
   float: left;
-  width: 10%; }
+  width: 10%;
+  position: relative;
+  top: 10px; }
 
 .rangeGuides {
   list-style: none;
-  margin: -5px 0 50px 0; }
+  margin: 11px 0 50px 0;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  right: 3.5%;
+  width: 95.6%; }
   .rangeGuides li {
     float: left;
-    margin-right: 1%;
     float: left;
-    margin: 0.35em;
+    margin: 0.35em 0;
+    padding: 0;
     font-size: 13px;
-    width: 1.025em;
     text-align: center;
     display: table-cell; }
     .rangeGuides li:nth-of-type(1) {
       margin-left: 0; }
     .rangeGuides li:last-child {
       margin-right: 0; }
+
+/*# sourceMappingURL=lone-ranger.css.map */

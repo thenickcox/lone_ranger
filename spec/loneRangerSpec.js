@@ -41,7 +41,7 @@
     describe('populating range guides', function() {
       beforeEach(function() {
         $('.ranger-container').remove();
-        this.range = $('<input type="range" class="lone-ranger" min="20" max="120" step="10" />');
+        this.range = $('<input type="range" class="lone-ranger" min="0" max="100" step="10" />');
         this.range.appendTo(this.page);
         return $('input').loneRanger({
           populateRangeGuides: true

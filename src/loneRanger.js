@@ -78,14 +78,22 @@
       var $el  = $(el),
           $ol  = $el.parent().append('<ol class="rangeGuides"></ol>').find('ol'),
           numGuides = ( (this.max - this.min) / this.step ),
-          guidesInc = 0,
+          guidesInc = this.min,
           stepInc = this.step;
 
+      $ol.append('<li>' + this.min + '</li>');
+      guidesInc += 1;
+
       while (guidesInc <= numGuides) {
-        $ol.append('<li>' + stepInc + '</li>')
+        $ol.append('<li>' + stepInc + '</li>');
         guidesInc += 1;
         stepInc += this.step;
       }
+
+      var guideWidth = 100/(numGuides + 1);
+      $('.rangeGuides').find('li').css({
+        width: "" + guideWidth + "%"
+      });
     },
 
     updateTextboxValue: function(el){
