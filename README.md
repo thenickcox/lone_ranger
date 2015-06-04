@@ -18,6 +18,16 @@ This jQuery plugin is a simple, no-bloat implementation of that color fill, with
    JS: $('.my-range').loneRanger(options);
 4. [Disco](https://www.youtube.com/watch?v=T9tbyvwldEE).
 
+Usage with all available options:
+
+```js
+$('.my-range').loneRanger({
+  fillLower: '#f00',
+  fillUpper: '#000',
+  textBox: true,
+  showRangeGuides: true
+});
+```
 
 ## Roadmap
 
