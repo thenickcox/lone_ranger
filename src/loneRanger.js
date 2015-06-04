@@ -61,9 +61,11 @@
     },
 
     initDOM: function(){
-      $(this.element).wrap('<div class="ranger-container" />')
-      $(this.element).parent().append('<input type="text" class="rangerVal" />');
-      this.$textBox = $(this.element).siblings('input[type=text]');
+      $el = $(this.element);
+      $el.wrap('<div class="ranger-container" />')
+      $el.parent().append('<input type="text" class="rangerVal" />');
+      this.$textBox = $el.siblings('input[type=text]');
+      this.updateFillLower($el);
     },
 
     setRangeValue: function(el){
